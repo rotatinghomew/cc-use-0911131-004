@@ -1,0 +1,137 @@
+{
+  "seed": 303,
+  "as_of": "2026-04-20",
+  "case_note": "边界例：2026-02 在样商户 m1 缺报价（不得补零或插补增长率）；cat-y 在 2026-03 有两个互斥映射目标（mapping_conflict，受影响类别不可比）；m2 的零价格报价必须被排除而不是当 0 计权。",
+  "observations": [
+    {
+      "observation_id": "r1-m0",
+      "revision": 1,
+      "merchant_id": "m0",
+      "product_id": "g0",
+      "category": "cat-x",
+      "period": "2026-01",
+      "price": 10.0,
+      "quantity": 10,
+      "unit": "piece",
+      "effective_at": "2026-01-15",
+      "known_at": "2026-01-20"
+    },
+    {
+      "observation_id": "r1-m1",
+      "revision": 1,
+      "merchant_id": "m1",
+      "product_id": "g1",
+      "category": "cat-x",
+      "period": "2026-01",
+      "price": 14.0,
+      "quantity": 10,
+      "unit": "piece",
+      "effective_at": "2026-01-15",
+      "known_at": "2026-01-20"
+    },
+    {
+      "observation_id": "r2-m0",
+      "revision": 1,
+      "merchant_id": "m0",
+      "product_id": "g0",
+      "category": "cat-x",
+      "period": "2026-02",
+      "price": 11.0,
+      "quantity": 10,
+      "unit": "piece",
+      "effective_at": "2026-02-15",
+      "known_at": "2026-02-20"
+    },
+    {
+      "observation_id": "r3-m0",
+      "revision": 1,
+      "merchant_id": "m0",
+      "product_id": "g0",
+      "category": "cat-x",
+      "period": "2026-03",
+      "price": 12.0,
+      "quantity": 10,
+      "unit": "piece",
+      "effective_at": "2026-03-15",
+      "known_at": "2026-03-20"
+    },
+    {
+      "observation_id": "r3-m1",
+      "revision": 1,
+      "merchant_id": "m1",
+      "product_id": "g1",
+      "category": "cat-y",
+      "period": "2026-03",
+      "price": 16.0,
+      "quantity": 10,
+      "unit": "piece",
+      "effective_at": "2026-03-15",
+      "known_at": "2026-03-20"
+    },
+    {
+      "observation_id": "r3-m2",
+      "revision": 1,
+      "merchant_id": "m2",
+      "product_id": "g2",
+      "category": "cat-x",
+      "period": "2026-03",
+      "price": 0.0,
+      "quantity": 5,
+      "unit": "piece",
+      "effective_at": "2026-03-15",
+      "known_at": "2026-03-20"
+    }
+  ],
+  "unit_conversions": [
+    {
+      "unit": "piece",
+      "factor": 1
+    }
+  ],
+  "membership": [
+    {
+      "merchant_id": "m0",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "known_at": "2026-01-01"
+    },
+    {
+      "merchant_id": "m1",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "known_at": "2026-01-01"
+    },
+    {
+      "merchant_id": "m2",
+      "effective_from": "2026-03-01",
+      "effective_to": null,
+      "known_at": "2026-03-01"
+    }
+  ],
+  "mappings": [
+    {
+      "mapping_id": "map-y-1",
+      "revision": 1,
+      "source": "cat-y",
+      "target": "new-y-alpha",
+      "effective_at": "2026-03-01",
+      "known_at": "2026-02-25"
+    },
+    {
+      "mapping_id": "map-y-2",
+      "revision": 1,
+      "source": "cat-y",
+      "target": "new-y-beta",
+      "effective_at": "2026-03-01",
+      "known_at": "2026-02-26"
+    }
+  ],
+  "publications": [
+    {
+      "publication_id": "published-january-reg303",
+      "as_of": "2026-01-31",
+      "period": "2026-01",
+      "level": 100.0
+    }
+  ]
+}

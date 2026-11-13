@@ -1,0 +1,107 @@
+{
+  "seed": 101,
+  "as_of": "2026-03-20",
+  "case_note": "回归例1：价格没变但样本换了。m2 为高价新入样商户，所有存续商户两期报价完全相同，headline 水平的任何上升只能来自样本更替，matched_price 必须为 0。",
+  "observations": [
+    {
+      "observation_id": "r1-m0",
+      "revision": 1,
+      "merchant_id": "m0",
+      "product_id": "g0",
+      "category": "cat-x",
+      "period": "2026-01",
+      "price": 10.0,
+      "quantity": 10,
+      "unit": "piece",
+      "effective_at": "2026-01-15",
+      "known_at": "2026-01-20"
+    },
+    {
+      "observation_id": "r1-m1",
+      "revision": 1,
+      "merchant_id": "m1",
+      "product_id": "g1",
+      "category": "cat-x",
+      "period": "2026-01",
+      "price": 12.0,
+      "quantity": 10,
+      "unit": "piece",
+      "effective_at": "2026-01-15",
+      "known_at": "2026-01-20"
+    },
+    {
+      "observation_id": "r2-m0",
+      "revision": 1,
+      "merchant_id": "m0",
+      "product_id": "g0",
+      "category": "cat-x",
+      "period": "2026-02",
+      "price": 10.0,
+      "quantity": 10,
+      "unit": "piece",
+      "effective_at": "2026-02-15",
+      "known_at": "2026-02-20"
+    },
+    {
+      "observation_id": "r2-m1",
+      "revision": 1,
+      "merchant_id": "m1",
+      "product_id": "g1",
+      "category": "cat-x",
+      "period": "2026-02",
+      "price": 12.0,
+      "quantity": 10,
+      "unit": "piece",
+      "effective_at": "2026-02-15",
+      "known_at": "2026-02-20"
+    },
+    {
+      "observation_id": "r2-m2",
+      "revision": 1,
+      "merchant_id": "m2",
+      "product_id": "g2",
+      "category": "cat-x",
+      "period": "2026-02",
+      "price": 30.0,
+      "quantity": 10,
+      "unit": "piece",
+      "effective_at": "2026-02-15",
+      "known_at": "2026-02-20"
+    }
+  ],
+  "unit_conversions": [
+    {
+      "unit": "piece",
+      "factor": 1
+    }
+  ],
+  "membership": [
+    {
+      "merchant_id": "m0",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "known_at": "2026-01-01"
+    },
+    {
+      "merchant_id": "m1",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "known_at": "2026-01-01"
+    },
+    {
+      "merchant_id": "m2",
+      "effective_from": "2026-02-01",
+      "effective_to": null,
+      "known_at": "2026-02-01"
+    }
+  ],
+  "mappings": [],
+  "publications": [
+    {
+      "publication_id": "published-january-reg101",
+      "as_of": "2026-01-31",
+      "period": "2026-01",
+      "level": 100.0
+    }
+  ]
+}
